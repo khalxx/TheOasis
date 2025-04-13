@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.background {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.646)),url(bg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    width: 100;
+    cursor: pointer;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 40px;
+
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1 {
+    font-size: 90px;
+    margin-top: 80px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content p {
+    font-size: large;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: gray;
+
+}
+.card {
+    background: white;
+    width: 300px;
+    height: 400;
+    margin: 10px;
+    border-radius: 15px;
+
+}
+.card-image {
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+
+}
+.car-1 {
+    background-image: url(spa.jpeg);
+}
+.car-2 {
+    background-image: url(pool.jpeg);
+}
+.car-3 {
+    background-image: url(sauna.webp);
+}
+.car-4 {
+    background-image: url(lounge.jpeg);
+}
+.car-5 {
+    background-image: url(giftshop.jpeg);
+}
+.car-6 {
+    background-image: url(free-photo-of-fancy-cafe-and-restaurant.jpg);
+}
+.card h3 {
+    padding: 10px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.card p {
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card:hover {
+
+    background-color: gray;
+    cursor: pointer;
+    
+}
+.card a {
+    background-color: #385b4f;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.card a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+}
+.card a:hover::before {
+    width: 100%;
+}
+
+
